@@ -1,5 +1,22 @@
 body {
-    background-color: blueviolet;
-    color: yellowgreen;
+    background-color: rgb(255, 206, 217);
+    color: rgb(180, 0, 105);
     font-family: 'Arial';
+}
+
+h1 {
+    background-size: 20px;
+    padding: 20px;
+    margin: 70px;
+    border-color: white;
+    border-style: dotted;
+    font-family: 'Rockwell';
+    color: rgb(0, 185, 231);
+    text-align: center;
+}
+
+.div {
+    font-family: 'Rockwell';
+    color: rgb(0, 185, 231);
+    text-align: center;
 }

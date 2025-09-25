@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="{% static 'blog/style.css' %}">
 </head>
 <body>
+    <h1>Boas vindas!</h1>
+    <div class="div">
+        <br/>
+        <p>Postagens incríveis abaixo:</p>
+        <br/>
+        <br/>
+    </div>
 {% for postagem in posts %}
-    <ul>
-        <li>
-            <p>oi</p>
-        </li>
-    </ul>
-
-    <p>Imagem: <img src=" {{ postagem.imagem.url }}" alt=""></p>
+    <p><img src=" {{ postagem.avatar.url }}"> {{ postagem.nome_perfil }}</p>
+    <img src=" {{ postagem.imagem.url }}" alt="">
     <p>Descrição: {{ postagem.descricao }}</p>
     <p>Publicado em {{ postagem.data_public }} às {{ postagem.hora_public }}</p>
 {% endfor %}
