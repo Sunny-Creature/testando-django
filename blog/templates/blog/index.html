@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Blogs{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+{% for postagem in posts %}
+    <ul>
+        <li>
+            <p>oi</p>
+        </li>
+    </ul>
+
+    <p>Imagem: <img src=" {{ postagem.imagem.url }}" alt=""></p>
+    <p>Descrição: {{ postagem.descricao }}</p>
+    <p>Publicado em {{ postagem.data_public }} às {{ postagem.hora_public }}</p>
+{% endfor %}
+</body>
+</html>
