@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +24,8 @@
         </form>
     </div>
 {% for postagem in posts %}
-    <p><img src=" {{ postagem.avatar.url }}"> {{ postagem.nome_perfil }}</p>
-    <img src=" {{ postagem.imagem.url }}" alt="">
+    <p><img src=" {{ postagem.avatar.url }}" alt="user-avatar"> {{ postagem.nome_perfil }}</p>
+    <img src=" {{ postagem.imagem.url }}" alt="user-image">
     <p>Descrição: {{ postagem.descricao }}</p>
     <p>Publicado em {{ postagem.data_public }} às {{ postagem.hora_public }}</p>
 {% endfor %}
